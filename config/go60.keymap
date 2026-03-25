@@ -25,7 +25,7 @@
 #define LAYER_Factory 4
 
 //Layer Names Defines
-#define qwerty 1
+#define qwerty 0
 #define sqwerty 1
 #define colemak 1
 #define scolemak 1
@@ -264,7 +264,24 @@
           >;          
           };         
 
-       layer_Base {
+     Shift_Layer         {   bindings =<  
+//          ~                    !                    @                    #                    $                    %                                                                                                        ^                    &                    *                    (                    )                  bksp         
+        &kp TILDE            &kp EXCL               &kp AT             &kp POUND            &kp DLLR             &kp PRCNT                                                                                                &kp CARET            &kp AMPS             &kp ASTRK            &kp LPAR             &kp RPAR             &kp BSPC       
+//      Shift Tab                Q                    W                    E                    R                    T                                                                                                        Y                    U                    I                    O                    P                    _          
+       &kp RS(TAB)           &kp RS(Q)            &kp RS(W)            &kp RS(E)            &kp RS(R)            &kp RS(T)                                                                                                &kp LS(Y)            &kp LS(U)            &kp LS(I)            &kp LS(O)            &kp LS(P)            &kp UNDER      
+//        HYPER                  A                    S                    D                    F                    G                                                                                                        H                    J                    K                    L                   (:)                  ( " )       
+        &kp LHYP             &kp RS(A)        &hml LCTRL RS(S)      &hml LALT RS(D)      &hml LGUI RS(F)      &hml LMEH RS(G)                                                                                          &hmr RMEH LS(H)      &hmr RGUI LS(J)      &hmr RALT LS(K)     &hmr RCTRL LS(L)         &kp COLON             &kp DQT       
+//        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        N                    M                   (<)                  (>)                  (?)                 RSHIFT       
+        &kp LSHFT            &kp RS(Z)            &kp RS(X)            &kp RS(C)            &kp RS(V)            &kp RS(B)                                                                                                &kp LS(N)            &kp LS(M)              &kp LT               &kp GT             &kp QMARK            &kp RSHFT      
+//                                                  LCTRL                LALT                 LGUI                                                                                                                                               RGUI                 RALT                 HYPER                                                  
+                                                &kp LCTRL            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RALT             &kp RHYP                                                 
+//                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
+                                                                                                               &lt num SPACE         &lt nav RET       &lt alw_magic RET    &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
+          >;          
+          };         
+
+
+    layer_Base {
             bindings = <
             &kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4  &kp N5                                                      &kp N6    &kp N7     &kp N8    &kp N9    &kp N0           &kp MINUS
               &kp TAB   &kp Q      &kp W    &kp E     &kp R   &kp T                                                       &kp Y     &kp U      &kp I     &kp O     &kp P            &kp BSLH
