@@ -18,11 +18,11 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 // layers
-#define LAYER_Base 10
-#define LAYER_Keypad 11
-#define LAYER_SymbolNav 12
-#define LAYER_Magic 13
-#define LAYER_Factory 14
+#define LAYER_Base 9
+#define LAYER_Keypad 10
+#define LAYER_SymbolNav 11
+#define LAYER_Magic 12
+#define LAYER_Factory 0
 
 //Layer Names Defines
 #define qwerty 0
@@ -394,21 +394,6 @@
           >;          
           };         
 
-        alw_magic            {   bindings =<  
-//        BT_CLR             Bright Dwn           Bright UP          Color Previous         Color Next           Color PP                                                                                                                                                                                                                         
-        &bt BT_CLR         &kp C_BRI_DN         &kp C_BRI_UP           &kp C_PREV           &kp C_NEXT           &kp C_PP                                                                                                 &kp C_MUTE         &kp C_VOL_DN         &kp C_VOL_UP             &none                &none            &bt BT_CLR_ALL   
-//                                                                                                                                                                                                                                                                                                                                                
-       &bootloader        &rgb_ug RGB_SPI      &rgb_ug RGB_SAI      &rgb_ug RGB_HUI      &rgb_ug RGB_BRI      &rgb_ug RGB_TOG                                                                                               &none                &none                &none                &none                &none             &bootloader     
-//                                                                                                                                                                                                                                                                                                                                                
-        &sys_reset        &rgb_ug RGB_SPD      &rgb_ug RGB_SAD      &rgb_ug RGB_HUD      &rgb_ug RGB_BRD      &rgb_ug RGB_EFF                                                                                               &none                &none                &none                &none                &none              &sys_reset     
-//                                                                                                                                                                                                                                                                                                                                                
-          &none                &none                &bt_0                &bt_1                &bt_2                &bt_3                                                                                                    &none                &none                &none                &none                &none          &to LAYER_FACTORY  
-//                                                                                                                                                                                                                                                                                                                                                
-                                              &out OUT_USB             &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
-//                                                                                                                                                                                                                                                                                                                                                
-                                                                                                                   &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
-          >;          
-          };         
 
 
 
