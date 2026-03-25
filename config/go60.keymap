@@ -54,61 +54,6 @@
         };
     };
 
-   combos {
-        compatible = "zmk,combos";
-
-        combo_tl1 {
-            timeout-ms = <200>;
-            key-positions = <36 37>;
-            bindings = <&tog colemak>;
-        };
-        combo_tl2 {
-            timeout-ms = <200>;
-            key-positions = <36 38>;
-            bindings = <&tog nav>;
-        };
-        combo_tl3 {
-            timeout-ms = <200>;
-            key-positions = <36 39>;
-            bindings = <&tog num>;
-        };
-        combo_tl4 {
-            timeout-ms = <200>;
-            key-positions = <36 40>;
-            bindings = <&tog sym>;
-        };
-        combo_tl5 {
-            timeout-ms = <200>;
-            key-positions = <36 41>;
-            bindings = <&tog colemak>;
-        };
-
-        combo_tlr1 {
-            timeout-ms = <200>;
-            key-positions = <49 48>;
-            bindings = <&tog colemak>;
-        };
-        combo_tlr2 {
-            timeout-ms = <200>;
-            key-positions = <49 47>;
-            bindings = <&tog nav>;
-        };
-        combo_tlr3 {
-            timeout-ms = <200>;
-            key-positions = <49 46>;
-            bindings = <&tog num>;
-        };
-        combo_tlr4 {
-            timeout-ms = <200>;
-            key-positions = <49 45>;
-            bindings = <&tog sym>;
-        };
-        combo_tlr5 {
-            timeout-ms = <200>;
-            key-positions = <49 44>;
-            bindings = <&tog colemak>;
-        };
-    };
 
     behaviors {
         magic: magic {
