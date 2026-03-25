@@ -31,7 +31,7 @@
 #define scolemak 3
 #define nav 4
 #define num 5
-#define sym 1
+#define sym 6
 #define pdfext 1
 #define pdfdel 1
 #define alw_magic 1
@@ -345,6 +345,23 @@
                                                                                                                    &trans               &trans               &trans               &trans               &trans             &kp KP_N0                                                                                                               
           >;          
           };         
+
+    symbol_layer         {   bindings =<  
+//          `                    !                    @                    #                    $                    %                                                                                                        ^                    &                    *                    (                    )                  Delete       
+        &kp GRAVE            &kp EXCL               &kp AT             &kp HASH             &kp DLLR             &kp PRCNT                                                                                                &kp CARET            &kp AMPS             &kp ASTRK            &kp LPAR             &kp RPAR              &kp DEL       
+//         Tab                                                                                                                                                                                                                {                    }                    |                    :                    "                    _          
+         &kp TAB               &none                &none                &none                &none                &none                                                                                                  &kp LBRC             &kp RBRC             &kp PIPE             &kp COLON             &kp DQT             &kp UNDER      
+//                                                                                                                                                                                                                            [                    ]                    \                    ;                   (')                   -          
+          &trans               &none                &none                &none                &none                &none                                                                                                  &kp RBKT             &kp LBKT             &kp BSLH             &kp SEMI              &kp SQT             &kp MINUS      
+//        LSHIFT                                                                                                                                                                                                              <                    >                    +                    =                    ?                    /          
+        &kp LSHFT              &none                &none                &none                &none                &none                                                                                                    &kp LT               &kp GT             &kp PLUS             &kp EQUAL            &kp QMARK            &kp FSLH       
+//                                                                                                                                                                                                                                                                                                                                                
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                   &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
+          >;          
+          };         
+
 
 
 
