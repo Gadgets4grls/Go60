@@ -34,7 +34,7 @@
 #define sym 6
 #define pdfext 7
 #define pdfdel 8
-#define alw_magic 9
+#define alw_magic 3
 
 
 
