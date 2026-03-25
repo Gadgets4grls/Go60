@@ -37,10 +37,10 @@
 #define magic 9
 
 // custom modifier combinations
-#define LHYP LS(LC(LA(LGUI)))
-#define RHYP RS(RC(RA(RGUI)))
-#define LMEH LS(LC(LALT))
-#define RMEH RS(RC(RALT))
+#define LHYP LC(LA(LG(LSHFT)))
+#define RHYP LC(LA(LG(RSHFT)))
+#define LMEH LC(LA(LSHFT))
+#define RMEH LC(LA(RSHFT))
 
 
 
