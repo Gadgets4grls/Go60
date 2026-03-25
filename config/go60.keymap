@@ -37,9 +37,6 @@
 #define magic 9
 
 
-
-
-
 / {
     input_processors {
         zip_click_to_right_click_mapper: zip_click_to_right_click_mapper {
@@ -49,7 +46,6 @@
             map = <INPUT_BTN_0 INPUT_BTN_1>;
         };
     };
-
 
     behaviors {
         magic: magic {
@@ -98,11 +94,7 @@
             tapping-term-ms = <200>;
             bindings = <&bt_select_3>, <&bt BT_DISC 3>;
         };
-
-
-
-
-};
+    };
 
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro {
