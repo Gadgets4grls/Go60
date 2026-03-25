@@ -27,7 +27,7 @@
 //Layer Names Defines
 #define qwerty 0
 #define sqwerty 1
-#define colemak 1
+#define colemak 2
 #define scolemak 1
 #define nav 1
 #define num 1
@@ -277,6 +277,22 @@
                                                 &kp LCTRL            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RALT             &kp RHYP                                                 
 //                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
                                                                                                                &lt num SPACE         &lt nav RET       &lt alw_magic RET    &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
+          >;          
+          };         
+
+    colemak_layer        {   bindings =<  
+//          `                    1                    2                    3                    4                    5                                                                                                        6                    7                    8                    9                    0                  bksp         
+          &gresc               &kp N1               &kp N2               &kp N4               &kp N4               &kp N5                                                                                                   &kp N6               &kp N7               &kp N8               &kp N9               &kp N0             &kp BSPC       
+//         Tab                   Q                    W                    F                    P                    G                                                                                                        J                    L                    U                    Y                    ;                    -          
+         &kp TAB             &lt nav Q            &lt num W            &lt sym F          &lt pdfext P         &lt pdfdel G                                                                                                 &kp J                &kp L                &kp U                &kp Y              &kp SEMI             &kp MINUS      
+//        HYPER                  A                    R                    S                    T                    D                                                                                                        H                    N                    E                    I                    O                   (')         
+        &kp LHYP           &lt scolemak A       &hml LCTRL R          &hml LALT S          &hml LGUI T          &hml LMEH G                                                                                              &hmr RMEH H          &hmr RGUI N          &hmr RALT E         &hmr RCTRL I         &lt scolemak O       &mt RHYP SQT     
+//        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        K                    M                    ,                    .                    /                  RSHIFT       
+        &kp LSHFT              &kp Z                &kp X                &kp C                &kp V                &kp B                                                                                                    &kp K                &kp M              &kp COMMA             &kp DOT             &kp FSLH             &kp RSHFT      
+//                                                  SPACE                LALT                 LGUI                                                                                                                                               RGUI                 RCtrl                SPACE                                                  
+                                                &kp SPACE            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RCTRL            &kp SPACE                                                
+//                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
+                                                                                                               &lt num SPACE         &lt nav RET       &lt alw_magic  RET   &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
           >;          
           };         
 
