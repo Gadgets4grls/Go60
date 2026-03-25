@@ -29,7 +29,7 @@
 #define sqwerty 1
 #define colemak 2
 #define scolemak 3
-#define nav 1
+#define nav 4
 #define num 1
 #define sym 1
 #define pdfext 1
@@ -312,6 +312,24 @@
                                                                                                                &lt num SPACE         &lt nav RET       &lt alw_magic RET    &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
           >;          
           };         
+
+      nav_layer          {   bindings =<  
+//         Esc                   F1                   F2                   F3                   F4                   F5                                                                                                       F6                   F7                   F8                   F9                  F10                  F11         
+         &kp ESC               &kp F1               &kp F2               &kp F3               &kp F4               &kp F5                                                                                                   &kp F6               &kp F7               &kp F8               &kp F9              &kp F10              &kp F11       
+//         Tab                  ESC             Alt OS L Arrw          Alt OS T           Alt OS R Arrw            PG UP                                                                                                    PG UP                HOME               Up Arrow                END                  Del                              
+         &kp TAB              &kp ESC         &kp LA(LG(LEFT))       &kp LA(LG(T))      &kp LA(LG(RIGHT))        &kp PG_UP                                                                                                &kp PG_UP            &kp HOME               &kp UP              &kp END              &kp DEL               &none        
+//        TRANS                                  CTRL L ARRW             OS TAB            CTRL R ARRW             PG DN                                                                                                    PG DN              Left Arrow           Dwn Arrow           Right Arrow             Insert                            
+          &trans               &none            &kp LC(LEFT)          &kp LG(TAB)         &kp LC(RIGHT)          &kp PG_DN                                                                                                &kp PG_DN            &kp LEFT             &kp DOWN             &kp RIGHT             &kp INS               &none        
+//        Space                                     OS [                 OS W                 OS ]                                                                                                                                                                                                                                   RSHIFT       
+        &kp SPACE              &none            &kp LG(LBKT)           &kp LG(W)          &kp LG(RBKT)             &none                                                                                                                         &none                &none                &none                &none              &kp RSHFT      
+//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                TRANS                                                  
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                                                                                 TRANS                TRANS                TRANS                TRANS                TRANS                TRANS                                                                                                                 
+                                                                                                                   &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
+          >;          
+          };         
+
+
 
 
 
