@@ -36,11 +36,7 @@
 #define pdfdel 8
 #define magic 9
 
-// custom modifier combinations
-#define LHYP LC(LA(LG(LSHFT)))
-#define RHYP LC(LA(LG(RSHFT)))
-#define LMEH LC(LA(LSHFT))
-#define RMEH LC(LA(RSHFT))
+
 
 
 
