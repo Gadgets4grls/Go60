@@ -32,7 +32,7 @@
 #define nav 4
 #define num 5
 #define sym 6
-#define pdfext 1
+#define pdfext 7
 #define pdfdel 1
 #define alw_magic 1
 
@@ -361,6 +361,24 @@
                                                                                                                    &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
           >;          
           };         
+
+    pdf_extract          {   bindings =<  
+//                                                                                                                                                                                                                                                                                                                                                
+          &none                &none                &none                &none                &none                &none                                                                                                    &none                &none                &none                &none                &none                &none        
+//                                                                                                                                                                                                                                               Num 7                Num 8                Num 9                                                  
+          &none                &none                &none                &none                &none                &none                                                                                                    &none        &kp LS(LA(LC(KP_N7)))&kp LS(LA(LC(KP_N8)))&kp LS(LA(LC(KP_N9)))        &none                &none        
+//                                                                                                                                                                                                                                               Num 4                Num 5                Num 6                                                  
+          &none                &none                &none                &none                &none                &none                                                                                                    &none        &kp LS(LA(LC(KP_N4)))&kp LS(LA(LC(KP_N5)))&kp LS(LA(LC(KP_N6)))        &none                &none        
+//                                                                                                                                                                                                                                               Num 1                Num 2                Num 3                                                  
+          &none                &none                &none                &none                &none                &none                                                                                                    &none        &kp LS(LA(LC(KP_N1)))&kp LS(LA(LC(KP_N2)))&kp LS(LA(LC(KP_N3)))&kp LS(LA(LC(KP_EQUAL)))        &none        
+//                                                                                                                                                                                                                                                                                                                                                
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                   &trans               &trans               &trans               &trans               &trans       &kp LS(LA(LC(KP_N0)))                                                                                                         
+          >;          
+          };         
+
+
 
 
 
