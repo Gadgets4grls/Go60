@@ -18,11 +18,11 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 // layers
-#define LAYER_Base 0
-#define LAYER_Keypad 1
-#define LAYER_SymbolNav 2
-#define LAYER_Magic 3
-#define LAYER_Factory 4
+#define LAYER_Base 10
+#define LAYER_Keypad 11
+#define LAYER_SymbolNav 12
+#define LAYER_Magic 13
+#define LAYER_Factory 14
 
 //Layer Names Defines
 #define qwerty 0
@@ -394,7 +394,7 @@
           >;          
           };         
 
-        ALW_Magic_go            {   bindings =<  
+        alw_magic            {   bindings =<  
 //        BT_CLR             Bright Dwn           Bright UP          Color Previous         Color Next           Color PP                                                                                                                                                                                                                         
         &bt BT_CLR         &kp C_BRI_DN         &kp C_BRI_UP           &kp C_PREV           &kp C_NEXT           &kp C_PP                                                                                                 &kp C_MUTE         &kp C_VOL_DN         &kp C_VOL_UP             &none                &none            &bt BT_CLR_ALL   
 //                                                                                                                                                                                                                                                                                                                                                
