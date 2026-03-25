@@ -248,21 +248,16 @@
 
     keymap {
         compatible = "zmk,keymap";
-    qwerty_layer         {   bindings =<  
-//          `                    1                    2                    3                    4                    5                                                                                                        6                    7                    8                    9                    0                  bksp         
-        &kp GRAVE              &kp N1               &kp N2               &kp N3               &kp N4               &kp N5                                                                                                   &kp N6               &kp N7               &kp N8               &kp N9               &kp N0             &kp BSPC       
-//         Tab                   Q                    W                    E                    R                    T                                                                                                        Y                    U                    I                    O                    P                    -          
-         &kp TAB             &lt nav Q            &lt num W            &lt sym E          &lt pdfext R         &lt pdfdel T                                                                                                 &kp Y                &kp U                &kp I                &kp O                &kp P              &kp MINUS      
-//        HYPER                  A                    S                    D                    F                    G                                                                                                        H                    J                    K                    L                    ;                   (')         
-        &kp LHYP           &lt sqwerty A        &hml LCTRL S          &hml LALT D          &hml LGUI F          &hml LMEH G                                                                                              &hmr RMEH H          &hmr RGUI J          &hmr RALT K         &hmr RCTRL L       &lt sqwerty SEMI          &kp SQT       
-//        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        N                    M                    ,                    .                    /                  RSHIFT       
-        &kp LSHFT              &kp Z                &kp X                &kp C                &kp V                &kp B                                                                                                    &kp N                &kp M              &kp COMMA             &kp DOT             &kp FSLH             &kp RSHFT      
-//                                                  SPACE                LALT                 LGUI                                                                                                                                               RGUI                 RCtrl                SPACE                                                  
-                                                &kp SPACE            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RCTRL            &kp SPACE                                                
-//                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
-                                                                                                               &lt num SPACE         &lt nav RET         &lt alw_magic        &lt alw_magic         &lt nav RET         &lt num SPACE                                                                                                             
+       layer_Base {
+            bindings = <
+            &kp EQUAL  &kp N1     &kp N2   &kp N3    &kp N4  &kp N5                                                      &kp N6    &kp N7     &kp N8    &kp N9    &kp N0           &kp MINUS
+              &kp TAB   &kp Q      &kp W    &kp E     &kp R   &kp T                                                       &kp Y     &kp U      &kp I     &kp O     &kp P            &kp BSLH
+              &kp ESC   &kp A      &kp S    &kp D     &kp F   &kp G                                                       &kp H     &kp J      &kp K     &kp L  &kp SEMI             &kp SQT
+ &magic LAYER_Magic 0   &kp Z      &kp X    &kp C     &kp V   &kp B                                                       &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH          &keypad_td
+                               &kp GRAVE  &kp DEL  &kp BSPC                                                                      &kp LGUI   &kp LBKT  &kp RBKT
+                                                     &symbol_nav_td  &kp LSHFT  &lt alw_magic     &kp LALT  &kp SPACE  &mt RALT RET
             >;
-        };
+         };
 
         layer_Keypad {
             bindings = <
