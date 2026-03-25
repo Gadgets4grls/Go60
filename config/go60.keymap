@@ -25,16 +25,16 @@
 #define LAYER_Factory 4
 
 //Layer Names Defines
-#define qwerty 0
-#define sqwerty 1
-#define colemak 2
-#define scolemak 3
-#define nav 4
-#define num 5
-#define sym 6
-#define pdfext 7
-#define pdfdel 8
-#define magic 9
+#define LAYER_qwerty 0
+#define LAYER_sqwerty 1
+#define LAYER_colemak 2
+#define LAYER_scolemak 3
+#define LAYER_nav 4
+#define LAYER_num 5
+#define LAYER_sym 6
+#define LAYER_pdfext 7
+#define LAYER_pdfdel 8
+#define LAYER_magicalw 9
 
 
 / {
