@@ -78,27 +78,27 @@
 
         combo_tlr1 {
             timeout-ms = <200>;
-            key-positions = <49 48>;
+            key-positions = <47 46>;
             bindings = <&tog colemak>;
         };
         combo_tlr2 {
             timeout-ms = <200>;
-            key-positions = <49 47>;
+            key-positions = <47 45>;
             bindings = <&tog nav>;
         };
         combo_tlr3 {
             timeout-ms = <200>;
-            key-positions = <49 46>;
+            key-positions = <47 44>;
             bindings = <&tog num>;
         };
         combo_tlr4 {
             timeout-ms = <200>;
-            key-positions = <49 45>;
+            key-positions = <47 43>;
             bindings = <&tog sym>;
         };
         combo_tlr5 {
             timeout-ms = <200>;
-            key-positions = <49 44>;
+            key-positions = <47 42>;
             bindings = <&tog colemak>;
         };
 
@@ -254,11 +254,11 @@
 //         Tab                   Q                    W                    E                    R                    T                                                                                                        Y                    U                    I                    O                    P                    -          
          &kp TAB             &lt nav Q            &lt num W            &lt sym E          &lt pdfext R         &lt pdfdel T                                                                                                 &kp Y                &kp U                &kp I                &kp O                &kp P              &kp MINUS      
 //        HYPER                  A                    S                    D                    F                    G                                                                                                        H                    J                    K                    L                    ;                   (')         
-        &kp LHYP           &lt sqwerty A        &hml LCTRL S          &hml LALT D          &hml LGUI F          &hml LMEH G                                                                                              &hmr RMEH H          &hmr RGUI J          &hmr RALT K         &hmr RCTRL L       &lt sqwerty SEMI          &kp SQT       
+        &kp LHYP           &lt sqwerty A        &hml LCTRL S          &hml LALT D          &hml LGUI F          &hml LMEH G                                                                                              &hmr RMEH H          &hmr RGUI J          &hmr RALT K         &hmr RCTRL L       &lt sqwerty SEMI       &mt RHYP SQT     
 //        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        N                    M                    ,                    .                    /                  RSHIFT       
         &kp LSHFT              &kp Z                &kp X                &kp C                &kp V                &kp B                                                                                                    &kp N                &kp M              &kp COMMA             &kp DOT             &kp FSLH             &kp RSHFT      
-//                                                  SPACE                LALT                 LGUI                                                                                                                                               RGUI                 RCtrl                SPACE                                                  
-                                                &kp SPACE            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RCTRL            &kp SPACE                                                
+//                                                  Escape               LALT                 LGUI                                                                                                                                               RGUI                 RCtrl            Layer Colemak                                              
+                                                 &kp ESC             &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RCTRL          &tog colemak                                               
 //                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
                                                                                                                &lt num SPACE         &lt nav RET       &lt alw_magic RET    &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
           >;          
@@ -273,10 +273,10 @@
         &kp LHYP             &kp RS(A)        &hml LCTRL RS(S)      &hml LALT RS(D)      &hml LGUI RS(F)      &hml LMEH RS(G)                                                                                          &hmr RMEH LS(H)      &hmr RGUI LS(J)      &hmr RALT LS(K)     &hmr RCTRL LS(L)         &kp COLON             &kp DQT       
 //        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        N                    M                   (<)                  (>)                  (?)                 RSHIFT       
         &kp LSHFT            &kp RS(Z)            &kp RS(X)            &kp RS(C)            &kp RS(V)            &kp RS(B)                                                                                                &kp LS(N)            &kp LS(M)              &kp LT               &kp GT             &kp QMARK            &kp RSHFT      
-//                                                  LCTRL                LALT                 LGUI                                                                                                                                               RGUI                 RALT                 HYPER                                                  
-                                                &kp LCTRL            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RALT             &kp RHYP                                                 
-//                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
-                                                                                                               &lt num SPACE         &lt nav RET       &lt alw_magic RET    &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
+//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                TRANS                                                  
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                                                                                 TRANS                TRANS                TRANS                TRANS                TRANS                TRANS                                                                                                                 
+                                                                                                                   &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
           >;          
           };         
 
@@ -289,13 +289,12 @@
         &kp LHYP           &lt scolemak A       &hml LCTRL R          &hml LALT S          &hml LGUI T          &hml LMEH G                                                                                              &hmr RMEH H          &hmr RGUI N          &hmr RALT E         &hmr RCTRL I         &lt scolemak O       &mt RHYP SQT     
 //        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        K                    M                    ,                    .                    /                  RSHIFT       
         &kp LSHFT              &kp Z                &kp X                &kp C                &kp V                &kp B                                                                                                    &kp K                &kp M              &kp COMMA             &kp DOT             &kp FSLH             &kp RSHFT      
-//                                                  SPACE                LALT                 LGUI                                                                                                                                               RGUI                 RCtrl                SPACE                                                  
-                                                &kp SPACE            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RCTRL            &kp SPACE                                                
-//                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
-                                                                                                               &lt num SPACE         &lt nav RET       &lt alw_magic  RET   &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
+//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS            Layer Qwerty                                               
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans            &tog qwerty                                               
+//                                                                                                                 TRANS                TRANS                TRANS                TRANS                TRANS                TRANS                                                                                                                 
+                                                                                                                   &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
           >;          
           };         
-
 
    scolemak_layer        {   bindings =<  
 //          ~                    1                    2                    3                    4                    5                                                                                                        6                    7                    8                    9                    0                  bksp         
@@ -306,10 +305,10 @@
         &kp LHYP             &kp RS(A)        &hml LCTRL RS(R)      &hml LALT RS(S)      &hml LGUI RS(T)      &hml LMEH RS(G)                                                                                          &hmr RMEH LS(H)      &hmr RGUI LS(N)      &hmr RALT LS(E)     &hmr RCTRL LS(I)         &kp LS(O)             &kp DQT       
 //        LSHIFT                 Z                    X                    C                    V                    B                                                                                                        K                    M                   (<)                  (>)                  (?)                 RSHIFT       
         &kp LSHFT            &kp RS(Z)            &kp RS(X)            &kp RS(C)            &kp RS(V)            &kp RS(B)                                                                                                  &kp K                &kp M                &kp LT               &kp GT             &kp QMARK            &kp RSHFT      
-//                                                  SPACE                LALT                 LGUI                                                                                                                                               RGUI                 RCtrl                SPACE                                                  
-                                                &kp SPACE            &kp LALT             &kp LGUI                                                                                                                                           &kp RGUI             &kp RCTRL            &kp SPACE                                                
-//                                                                                                                 SPACE           Layer Nav / RET         LayerMagic           LayerMagic        Layer Nav / RET     Layer Num / SPACE                                                                                                           
-                                                                                                               &lt num SPACE         &lt nav RET       &lt alw_magic RET    &lt alw_magic RET       &lt nav RET         &lt num SPACE                                                                                                             
+//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                TRANS                                                  
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                                                                                 TRANS                TRANS                TRANS                TRANS                TRANS                TRANS                                                                                                                 
+                                                                                                                   &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
           >;          
           };         
 
@@ -322,13 +321,12 @@
           &trans               &none            &kp LC(LEFT)          &kp LG(TAB)         &kp LC(RIGHT)          &kp PG_DN                                                                                                &kp PG_DN            &kp LEFT             &kp DOWN             &kp RIGHT             &kp INS               &none        
 //        Space                                     OS [                 OS W                 OS ]                                                                                                                                                                                                                                   RSHIFT       
         &kp SPACE              &none            &kp LG(LBKT)           &kp LG(W)          &kp LG(RBKT)             &none                                                                                                                         &none                &none                &none                &none              &kp RSHFT      
-//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                TRANS                                                  
-                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                                                                       
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &none                                                  
 //                                                                                                                 TRANS                TRANS                TRANS                TRANS                TRANS                TRANS                                                                                                                 
                                                                                                                    &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
           >;          
           };         
-
 
       num_layer          {   bindings =<  
 //          ~                   F11                  F12                  F13                  F14                  F15                                                                                                      F16                  F17                  F18                  F19                  F20                  F21         
@@ -339,8 +337,8 @@
         &kp LHYP           &bt BT_DISC 0        &bt BT_DISC 1        &bt BT_DISC 2        &bt BT_DISC 3        &out OUT_USB                                                                                            &kp KP_ASTERISK         &kp KP_N4            &kp KP_N5            &kp KP_N6           &kp KP_PLUS             &none        
 //        BTCLR                 BT0                  BT1                  BT2                  BT3                  BT5                                                                                                     Num .                Num 1                Num 2                Num 3               Num Ent                            
         &bt BT_CLR         &bt BT_SEL 0         &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4                                                                                               &kp KP_DOT           &kp KP_N1            &kp KP_N2            &kp KP_N3          &kp KP_EQUAL             &none        
-//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                TRANS                                                  
-                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+//                                                  TRANS                TRANS                TRANS                                                                                                                                              TRANS                TRANS                                                                       
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &none                                                  
 //                                                                                                                 TRANS                TRANS                TRANS                TRANS                TRANS                Num 0                                                                                                                 
                                                                                                                    &trans               &trans               &trans               &trans               &trans             &kp KP_N0                                                                                                               
           >;          
@@ -372,7 +370,7 @@
 //                                                                                                                                                                                                                                               Num 1                Num 2                Num 3                                                  
           &none                &none                &none                &none                &none                &none                                                                                                    &none        &kp LS(LA(LC(KP_N1)))&kp LS(LA(LC(KP_N2)))&kp LS(LA(LC(KP_N3)))&kp LS(LA(LC(KP_EQUAL)))        &none        
 //                                                                                                                                                                                                                                                                                                                                                
-                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &none                                                  
 //                                                                                                                                                                                                                                                                                                                                                
                                                                                                                    &trans               &trans               &trans               &trans               &trans       &kp LS(LA(LC(KP_N0)))                                                                                                         
           >;          
@@ -388,7 +386,7 @@
 //                                                                                                                                                                                                                                               Num 1                Num 2                Num 3                                                  
           &none                &none                &none                &none                &none                &none                                                                                                    &none        &kp LS(LC(LG(KP_N1)))&kp LS(LC(LG(KP_N2)))&kp LS(LC(LG(KP_N3)))&kp LS(LC(LG(KP_EQUAL)))        &none        
 //                                                                                                                                                                                                                                                                                                                                                
-                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+                                                  &trans               &trans               &trans                                                                                                                                             &trans               &trans               &none                                                  
 //                                                                                                                                                                                                                                                                                                                                                
                                                                                                                    &trans               &trans               &trans               &trans               &trans       &kp LS(LC(LG(KP_N0)))                                                                                                         
           >;          
@@ -404,25 +402,12 @@
 //                                                  BT_0                 BT_1                 BT_2                 BT_3                                                                                                                                                                                                                           
           &none                &none                &bt_0                &bt_1                &bt_2                &bt_3                                                                                                    &none                &none                &none                &none                &none                &none        
 //                                                USB Output                                                                                                                                                                                                                                                                                      
-                                              &out OUT_USB             &trans               &trans                                                                                                                                             &trans               &trans               &trans                                                 
+                                              &out OUT_USB             &trans               &trans                                                                                                                                             &trans               &trans               &none                                                  
 //                                                                                                                                                                                                                                                                                                                                                
                                                                                                                    &trans               &trans               &trans               &trans               &trans               &trans                                                                                                                
-          >;          
+          >;                  
           };         
 
-
-
-
-        layer_Magic {
-            bindings = <
-  &bt BT_CLR     &kp C_BRI_DN     &kp C_BRI_UP       &kp C_PREV       &kp C_NEXT         &kp C_PP                                &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none   &none    &bt BT_CLR_ALL
- &bootloader  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                     &none         &none         &none   &none   &none       &bootloader
-  &sys_reset  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                     &none         &none         &none   &none   &none        &sys_reset
-       &none            &none            &bt_0            &bt_1            &bt_2            &bt_3                                     &none         &none         &none   &none   &none &to LAYER_Factory
-                                  &out OUT_USB            &none            &none                                                                    &none         &none   &none
-                                                                                            &none   &none   &none     &none   &none   &none
-            >;
-        };
     };
 };
 
